@@ -1,0 +1,99 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+//int main()
+//{
+//	int ret = 0;
+//	char password[20] = {0};
+//	int ch = 0;
+//	printf("请输入密码:>");
+//	scanf("%s", password);//输入密码，并存放在password数组中,但此时由于敲了一次回车，缓冲区内部还剩下一个/n在里面，所以此时若是getchar会直接读取/n，因此要先清除缓冲区内部的/n
+//	while ((ch = getchar())!='/n');
+//	{
+//	};//利用getchar读走内部数据,用while语句防止密码输入含有空格之类停止读取密码的字符
+//
+//	printf("请确认(Y/N):>");
+//	ret=getchar();
+//	if (ret == 'Y')
+//	{
+//		printf("确认成功\n");
+//	}
+//	else 
+//	{
+//		printf("放弃确认\n");
+//	}
+//}
+
+//int main()//除了输入0-9其他都不输出
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch<'0' || ch>'9')
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	for (int i = 0; i <= 10; i++)//for(初始值，判定条件，调整)
+//	{
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
+
+//int main()//break 跳出循环；
+//{
+//	for (int i = 0; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			break;
+//		printf("%d", i);
+//	}
+//	return 0;
+//}
+
+//int main()//continue 跳过后面语句，重新进入循环；
+//{
+//	for (int i = 0; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d", i)
+//;
+//	}
+//	return 0;
+//}
+
+//int main()//循环体内调整变量，容易死循环
+//{
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (i = 5)//将变量i赋值5
+//			printf("haha\n");
+//		printf("hehe\n");
+//	}
+//		return 0;
+//}
+
+//int main()//i<10的可读性比i<=9的可读性更强
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+//int main()//无线循环打印hh，（1）for循环的三个分号内部内容都可以省略；（2）若是判断条件为空，则会一直循环；
+//{
+//	for (;;)
+//		printf("hh\n");
+//	return 0;
+//}
